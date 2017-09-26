@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dnage.collegeloanpayoffcalculator.MainActivity">
+
+    <TextView
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/textView"
+        android:layout_width="171dp"
+        android:layout_height="17dp"
+        android:text="Amount loaned:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="138dp"
+        android:layout_height="22dp"
+        android:text="Interest (as percent):"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="75dp"
+         />
+
+    <EditText
+        android:id="@+id/LoanInput"
+        android:layout_width="77dp"
+        android:layout_height="36dp"
+        android:text=""
+        android:textSize="15sp"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="39dp"
+         />
+
+    <EditText
+        android:id="@+id/InterestInput"
+        android:layout_width="78dp"
+        android:layout_height="39dp"
+        android:text=""
+        android:textSize="15sp"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="92dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="131dp"
+        android:onClick="calculateLoan(LoanInput,IntersetInput,YearInput)"
+        />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minimum payment per month:"
+        android:layout_marginLeft="99dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="188dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 years:"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="221dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 years:"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="247dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 years:"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="272dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 years:"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="298dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25 years:"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="325dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30 years:"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="349dp" />
+    <TextView
+        android:id="@+id/Answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="99dp"
+        android:text=""
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="289dp" />
+    <TextView
+        android:id="@+id/YearInput5"
+        android:layout_width="73dp"
+        android:layout_height="18dp"
+        android:text=""
+        android:textSize="15sp"
+        android:inputType="number"
+        android:layout_marginLeft="156dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="221dp" />
+    <TextView
+        android:id="@+id/YearInput25"
+        android:layout_width="73dp"
+        android:layout_height="18dp"
+        android:text=""
+        android:textSize="15sp"
+        android:inputType="number"
+        android:layout_marginLeft="167dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="325dp"
+        tools:layout_editor_absoluteX="168dp" />
+    <TextView
+        android:id="@+id/YearInput20"
+        android:layout_width="77dp"
+        android:layout_height="18dp"
+        android:text=""
+        android:textSize="15sp"
+        android:inputType="number"
+        android:layout_marginLeft="161dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="298dp" />
+    <TextView
+        android:id="@+id/YearInput15"
+        android:layout_width="74dp"
+        android:layout_height="18dp"
+        android:text=""
+        android:textSize="15sp"
+        android:inputType="number"
+        android:layout_marginLeft="164dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="272dp" />
+    <TextView
+        android:id="@+id/YearInput10"
+        android:layout_width="71dp"
+        android:layout_height="18dp"
+        android:text=""
+        android:textSize="15sp"
+        android:inputType="number"
+        android:layout_marginLeft="167dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="246dp" />
+    <TextView
+        android:id="@+id/YearInput30"
+        android:layout_width="75dp"
+        android:layout_height="18dp"
+        android:text=""
+        android:textSize="15sp"
+        android:inputType="number"
+        android:layout_marginLeft="163dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="349dp" />
+
+
+</android.support.constraint.ConstraintLayout>
